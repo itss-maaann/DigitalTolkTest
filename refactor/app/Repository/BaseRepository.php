@@ -6,8 +6,9 @@ use Validator;
 use Illuminate\Database\Eloquent\Model;
 use DTApi\Exceptions\ValidationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use DTApi\Contracts\Repositories\BaseRepositoryInterface;
 
-class BaseRepository
+class BaseRepository implements BaseRepositoryInterface
 {
 
     /**
